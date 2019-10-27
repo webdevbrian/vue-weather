@@ -20,8 +20,6 @@ Vue.axios.defaults.params = {}
 // API key
 Vue.axios.defaults.params['appid'] = process.env.VUE_APP_WEATHERKEY // Get your own at openweathermap.com
 
-console.log(process.env.VUE_APP_WEATHERKEY);
-
 // set default unit type
 Vue.axios.defaults.params['units'] = 'imperial'
 

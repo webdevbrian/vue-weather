@@ -5,7 +5,7 @@
         <div class="detail__header">
           <div class="detail__title">
             <strong class="strong">{{ details.city.name }}, {{ details.city.country}}</strong>
-            5 Day Weather Forecast
+            Future Weather Forecast
           </div>
           <v-link
             class="detail__back button--secondary"
@@ -55,7 +55,7 @@ export default {
     filteredDays () {
       return this.details.list.filter((item) => {
         const date = new Date(item.dt * 1000)
-        return date.getHours() !== 0
+        return date.getHours() === 11
       })
     }
   },
