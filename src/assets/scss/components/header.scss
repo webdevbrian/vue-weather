@@ -1,0 +1,94 @@
+@import "../variables";
+
+.header {
+  background: #fff;
+  box-shadow: 0px 6px 10px rgba(27, 39, 72, 0.05);
+  border-bottom: 1px solid #d6e2e8;
+
+  &__wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+
+    &__img {
+      height: 61px;
+      margin-right: 20px;
+      object-fit: contain;
+
+      @include bp(mobile) {
+        height: 51px;
+        margin-right: 10px;
+      }
+
+    }
+
+    &__title {
+      color: #3d76d8;
+      font-size: 27px;
+
+      @include bp(mobile) {
+        font-size: 21px;
+      }
+
+    }
+
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+
+    &__button {
+      margin-left: 15px;
+
+      @include bp(mobile) {
+        margin-left: 7px;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

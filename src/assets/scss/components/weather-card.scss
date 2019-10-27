@@ -1,0 +1,262 @@
+@import "../variables";
+
+$radius: 8px;
+$width: (100 - 2) / 3;
+$gutter: 1%;
+
+.weather-card {
+  width: $width * 1%;
+  margin-right: $gutter;
+  position: relative;
+  margin-bottom: $gutter;
+  height: 250px;
+  box-shadow: 0px 6px 10px rgba(27, 51, 93, 0.2);
+  border-radius: $radius;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(to top, rgb(11, 22, 35) 0%, rgba(9, 9, 121, 0) 100%);
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover {
+
+    &:after {
+      height: 100%;
+    }
+
+    .weather-card__cnt {
+      background: rgba(21, 53, 107, 0.55);
+    }
+  }
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.primary {
+    width: 49.5%;
+  }
+
+  @include bp(desktop-small) {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+
+    &.primary {
+      width: 49%;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  @include bp(tablet) {
+    height: 215px;
+  }
+
+  @include bp(tablet-small) {
+    height: 190px;
+  }
+
+  @include bp(mobile) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+
+    &.primary {
+      width: 100%;
+    }
+
+  }
+
+  &__cover {
+    position: absolute;
+    border-radius: $radius;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    display: inline-flex;
+    color: #fff;
+    font-size: 59px;
+    line-height: 1em;
+    margin-left: auto;
+
+    @include bp(tablet-small) {
+      font-size: 49px;
+    }
+
+    @include bp(mobile) {
+      font-size: 59px;
+    }
+
+  }
+
+  &__cnt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(21, 53, 107, 0.4);
+    border-radius: $radius;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+
+    @include bp(tablet-small) {
+      padding: 15px;
+    }
+
+  }
+
+  &__temp {
+    color: #fff;
+    font-size: 56px;
+    display: block;
+    font-weight: 700;
+    line-height: 1em;
+
+    @include bp(tablet-small) {
+      font-size: 41px;
+    }
+
+    @include bp(mobile) {
+      font-size: 45px;
+    }
+
+    small {
+      font-size: 60%;
+      opacity: .75;
+      position: relative;
+      top: -14px;
+      line-height: 1em;
+      left: 1px;
+    }
+
+  }
+
+  &__name {
+    color: #fff;
+    opacity: .8;
+    margin-top: 5px;
+    display: block;
+    font-size: 18px;
+  }
+
+  &-info {
+    display: flex;
+    margin-top: auto;
+    padding: 0;
+
+    &__item {
+      color: #fff;
+      flex: 1;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+        border-right: 0;
+      }
+
+      @include bp(tablet-small) {
+        margin-right: 7px;
+      }
+
+    }
+
+    &__txt {
+      opacity: .7;
+      margin-top: 5px;
+      font-weight: 400;
+      font-size: 15px;
+
+      @include bp(tablet-small) {
+        font-size: 13px;
+      }
+
+    }
+
+    &__title {
+      font-size: 27px;
+      font-weight: 700;
+
+      @include bp(tablet-small) {
+        font-size: 24px;
+      }
+
+      small {
+        font-size: 70%;
+        opacity: .75;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

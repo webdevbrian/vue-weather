@@ -1,0 +1,223 @@
+@import "../variables";
+
+$width: (100 - 4) / 5;
+$gutter: 1%;
+
+.day-card {
+  position: relative;
+  background: #fff;
+  width: $width * $gutter;
+  margin-right: $gutter;
+  margin-bottom: $gutter;
+  border: 1px solid #d6e2e8;
+  border-radius: 8px;
+  box-shadow: 0px 6px 10px rgba(27, 39, 72, 0.05);
+  padding: 15px;
+  transition: all .3s ease-in-out;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 18px rgba(27, 39, 72, 0.15);
+  }
+
+  @include bp(desktop-small) {
+    width: 32.66%;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+  }
+
+  @include bp(tablet-small) {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 2%;
+    }
+
+  }
+
+  @include bp(mobile) {
+    padding: 11px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @include bp(mobile) {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__day {
+    font-size: 19px;
+    color: #3d76d8;
+    font-weight: 700;
+
+    @include bp(mobile) {
+      font-size: 14px;
+    }
+
+    @include bp(mobile-xs) {
+      font-size: 12px;
+    }
+
+  }
+
+  &__date {
+    color: #5a6e96;
+    opacity: .8;
+    font-size: 15px;
+
+    @include bp(mobile) {
+      font-size: 14px;
+    }
+
+    @include bp(mobile-xs) {
+      font-size: 11px;
+    }
+
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @include bp(mobile) {
+      margin-bottom: 10px;
+    }
+
+  }
+
+  &__temp {
+    font-size: 35px;
+    color: #1b2b46;
+    line-height: 1em;
+    opacity: .8;
+
+    @include bp(mobile) {
+      font-size: 25px;
+    }
+
+  }
+
+  &__icon {
+    font-size: 45px;
+    color: #3d76d8;
+    line-height: 1em;
+    display: inline-flex;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 50%;
+      margin-bottom: 10px;
+
+      &:last-child, &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+
+      @include bp(mobile) {
+        margin-bottom: 7px;
+      }
+
+    }
+
+    &__title {
+      font-size: 19px;
+      color: #1b2b46;
+      font-weight: 700;
+      opacity: 0.75;
+
+      @include bp(mobile) {
+        font-size: 16px;
+      }
+
+      @include bp(mobile-xs) {
+        font-size: 15px;
+      }
+
+    }
+
+    &__txt {
+      color: #5a6e96;
+      opacity: 0.55;
+      font-size: 14px;
+      margin-top: 7px;
+
+      @include bp(mobile) {
+        font-size: 12px;
+        margin-top: 3px;
+      }
+
+      @include bp(mobile-xs) {
+        font-size: 11px;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

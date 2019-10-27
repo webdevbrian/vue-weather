@@ -1,0 +1,222 @@
+@import "variables";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  background: #f7faff;
+}
+
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+*,*:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+}
+
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, p, pre, fieldset, ul, ol, menu, form {
+  margin: 0;
+}
+
+button, fieldset, iframe {
+  border: 0;
+}
+
+fieldset, ul, ol, button, menu {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+a,a:hover,a:focus,a:active {
+  text-decoration: none;
+}
+
+a,a:focus,button,button:focus {
+  outline: none!important;
+}
+
+a,button {
+  user-select: none;
+  transition: all .3s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  display: block;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+.fw {
+  width: 100%;
+  max-width: 100%;
+}
+
+input,textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  transition: all .5s ease-in-out;
+  color: #21325a;
+  font-weight: 500;
+  font-size: 16px;
+
+  &::placeholder {
+    color: #7e87a1;
+    font-weight: 600;
+  }
+
+}
+
+textarea {
+  resize: none;
+  height: 110px;
+}
+
+.container {
+  padding-right: 35px;
+  padding-left: 35px;
+  width: 100%;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include bp(tablet-small) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  @include bp(mobile) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+}
+
+//transitions
+
+//fade
+
+.fade-enter-active {
+  transition: opacity .25s ease-in-out;
+  transition-delay: .25s;
+}
+.fade-leave-active {
+  transition: opacity .25s ease-in-out;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-leave-to{
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
