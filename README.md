@@ -1,4 +1,8 @@
-# weather
+# Vue Weather
+
+![Vue Weather](https://imgur.com/2aFMDrV.jpg)
+
+You'll need to get your own API key at openweathermap.com and create a .env file that has `VUE_APP_WEATHERKEY` (see main.js)
 
 ## Project setup
 ```
