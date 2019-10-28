@@ -1,6 +1,10 @@
 # Vue Weather
 
+## Dashboard view
 ![Vue Weather](https://imgur.com/2aFMDrV.jpg)
+
+## Forecast view
+![Vue Weather Forecast](https://imgur.com/J2o0fwN.jpg)
 
 You'll need to get your own API key at openweathermap.com and create a .env file that has `VUE_APP_WEATHERKEY` (see main.js)
 
