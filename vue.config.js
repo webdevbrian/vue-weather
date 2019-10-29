@@ -26,5 +26,6 @@ module.exports = {
         plainSprite: true
       })
     ]
-  }
+  },
+  publicPath: ''
 }
