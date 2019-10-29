@@ -24,7 +24,7 @@ export default {
   methods: {
     getCityDetails () {
       let self = this
-      axios.get('/group?id=2643743,2759794,2988507,3054643,2950159') // Get different location IDs from the API
+      axios.get('/group?id=5128581,2759794,2988507,3054643,2950159') // Get different location IDs from the API
         .then(response => {
           self.cities = response.data
         })

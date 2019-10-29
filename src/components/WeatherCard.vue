@@ -1,6 +1,6 @@
 <template>
   <router-link :to="{ name: 'CityDetail', params: { id: city.id, slug: city.name.toLowerCase() }}" class="weather-card">
-    <img :src="require(`@/assets/img/${this.city.name.toLowerCase()}-cover.jpg`)" alt="london weather" class="weather-card__cover">
+    <img :src="require(`@/assets/img/${this.city.name.toLowerCase()}-cover.jpg`)" :alt="`${this.city.name} weather`" class="weather-card__cover">
     <div class="weather-card__cnt">
       <div class="weather-card__top">
         <div>
